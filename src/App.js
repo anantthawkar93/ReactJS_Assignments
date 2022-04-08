@@ -8,8 +8,13 @@ import Menu from "./Menu";
 import RegisterationForm from "./RegisterationForm";
 import Native from "./Native";
 import Footer from "./Footer";
-import Comment from './Comment';
-import GreetForm from './GreetForm';
+import Comments from './Comments';
+import Forum from './Forum';
+import ClassBasedCounter from './ClassBasedCounter';
+import ClassBasedLogin from './ClassBasedLogin';
+import SmartCounter from './SmartCounter';
+import Calculator from './Calculator';
+import ScientificCalculator from './ScientificCalculator';
 
 export default function App() {
     return (
@@ -23,6 +28,13 @@ export default function App() {
         <RegisterationForm />
         <Native />
         <Footer/>
+        <Forum/>
+        <Comments/>
+        <ClassBasedCounter/>
+        <ClassBasedLogin/>
+        <SmartCounter/>
+        <Calculator/>
+        <ScientificCalculator/>
       </div>
     );
   }

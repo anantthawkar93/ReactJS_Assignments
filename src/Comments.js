@@ -1,28 +1,44 @@
 import React from "react";
-import Comment from "./Comment";
 
-function Forum() {
+function Comments() {
   return (
-    <div className="forum">
-      <form>
-        <h3>
-          <i>Forum Component</i>
-        </h3>
-        <label>
-          <input type="text" name="title" placeholder="Enter Forum Title" />
-        </label>
-        <br />
-        <input type="date" placeholder="Enter Current Date" />
-        <br />
-        <textarea
-          type="text"
-          placeholder="Enter Description here"
-          rows="3"
-          cols="100"
-        ></textarea>
-      </form>
-      <Comment />
+    <div className="commentSection">
+      <h2>
+        <i>Comment Section</i>
+      </h2>
+      <div className="comment">
+        <div className="CommentHeading">
+          <h3>Comment Topic:</h3>
+          <textarea rows="2" cols="150"></textarea>
+          <h4>Author Name:</h4>
+          <textarea rows="2" cols="150"></textarea>
+          <h5>Comment Body:</h5>
+          <textarea rows="4" cols="150"></textarea>
+        </div>
+      </div>
+
+      <div className="comment">
+        <div className="CommentHeading">
+          <h3>Comment Topic: </h3>
+          <textarea rows="2" cols="150"></textarea>
+          <h4>Author Name: </h4>
+          <textarea rows="2" cols="150"></textarea>
+          <h5>Comment Body: </h5>
+          <textarea rows="4" cols="150"></textarea>
+        </div>
+      </div>
+
+      <div className="comment">
+        <div className="CommentHeading">
+          <h3>Comment Topic: </h3>
+          <textarea rows="2" cols="150"></textarea>
+          <h4>Author Name: </h4>
+          <textarea rows="2" cols="150"></textarea>
+          <h5>Comment Body:</h5>
+          <textarea rows="4" cols="150"></textarea>
+        </div>
+      </div>
     </div>
   );
 }
-export default Forum;
+export default Comments;
