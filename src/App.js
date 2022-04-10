@@ -10,11 +10,28 @@ import Native from "./Native";
 import Footer from "./Footer";
 import Comments from './Comments';
 import Forum from './Forum';
-import ClassBasedCounter from './ClassBasedCounter';
+import TitleModifier from './TitleModifier';
 import ClassBasedLogin from './ClassBasedLogin';
-import SmartCounter from './SmartCounter';
 import Calculator from './Calculator';
 import ScientificCalculator from './ScientificCalculator';
+import SimpleInterest from './SimpleInterest';
+import SmartCounter from './SmartCounter';
+import ClassBasedCounter from './ClassBasedCounter';
+import ClassBasedCalculator from './ClassBasedCalculator';
+import NthPrime from './nthPrime';
+import ClassBasedNthPrime from './ClassBasedNthPrime';
+import Average from './Average';
+import AddNos from './AddNos';
+import IsEven from './IsEven';
+import MiniCalculator from './MiniCalculator';
+import Greet from './Greet';
+import AppforGreet from './AppforGreet';
+import GreetWithState from './GreetWithState';
+import GreetForm from './GreetForm';
+import CommentNew from './CommentNew';
+import ForumNew from './ForumNew';
+import Ecommerce from './Ecommerce';
+import AppforGithub from './GithubApi/AppforGithub';
 
 export default function App() {
     return (
@@ -30,12 +47,30 @@ export default function App() {
         <Footer/>
         <Forum/>
         <Comments/>
-        <ClassBasedCounter/>
-        <ClassBasedLogin/>
-        <SmartCounter/>
-        <Calculator/>
-        <ScientificCalculator/>
+        <TitleModifier />
+        <ClassBasedLogin />
+        <Calculator />
+        <ScientificCalculator />
+        {/*<SimpleInterest/>*/}
+        <SmartCounter />
+        <ClassBasedCounter />
+        <ClassBasedCalculator />
+        <NthPrime />
+        {/*<ClassBasedNthPrime />*/}
+        <Average />
+        <AddNos />
+        {/*<MiniCalculator/>*/}
+        <IsEven />
+        <AppforGreet/>
+        <Greet/>
+        <Hobbies/>
+        {/*<GreetWithState/>*/}
+        <GreetForm/>
+        <CommentNew/>
+        <ForumNew/>
+        <Ecommerce/>
+        <AppforGithub/>
+      
       </div>
     );
   }
-  
