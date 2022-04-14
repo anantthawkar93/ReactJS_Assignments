@@ -1,0 +1,85 @@
+import React, {useState} from "react";
+
+function FormHandlingApp() {
+    const [state, setState] = useState([{
+        fname: "",
+        lname:"",
+        message: "",
+        carBrand: "",
+        isChecked: false,
+        gender: "",
+    }])
+
+    const handleChange = e =>{
+        //using ternary operator for targeting the event by type "name" or "checked" prop.
+        const value = e.target.type === "checkbox" ? e.target.checked : e.target.value
+        setState({
+            ...state,
+            [e.target.name]:value,})
+    }
+    //const HobbiesArr = ;
+    
+    return(
+        <div>
+            <h1>React Form Handling</h1>
+            <form>
+                <label>
+                    First Name: {" "}
+                    <input type="text" name="fname" value={state.fname} onChange={handleChange}/>
+                </label>&nbsp;&nbsp;&nbsp;
+                <label>
+                    Last Name: {" "}
+                    <input type="text" name="lname" value={state.lname} onChange={handleChange}/>
+                </label> <br/><br/>
+                <label>
+                    Your Message: {" "}
+                    <textarea type="text" name="message" value={state.message} onChange={handleChange}/>
+                </label>
+                <br/><br/>
+                <label>Pick your favorite car brand:
+                    <select type="text" name="carBrand" value={state.carBrand} onChange={handleChange}>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="bmw">BMW</option>
+                        <option value="maserati">Maserati</option>
+                        <option value="infinity">Infinity</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                </label>
+                <br/><br/>
+                <label>
+                    <input 
+                        type="checkbox" 
+                        name="isChecked" 
+                        checked={state.isChecked} 
+                        onChange={handleChange}
+                     />{" "} Is Checked?
+                </label>
+                <br /><br />
+                <label>
+                    <input
+                    type="radio"
+                    name="gender"
+                    value="male"
+                    checked={state.gender === "male"}
+                    onChange={handleChange}
+                    />{" "}Male
+                </label>
+                <label>
+                    <input
+                    type="radio"
+                    name="gender"
+                    value="female"
+                    checked={state.gender === "female"}
+                    onChange={handleChange}
+                    />{" "}Female
+                </label>
+            </form>
+            <h5>Name: {state.fname}  {state.lname}  </h5>  
+            <p>Message: {state.message}</p>
+            <h5>My favorite car brand: {state.carBrand}</h5>
+            <h5>Is it Checked? : {state.isChecked ? "Yes" : "No"} </h5>
+            <h5>Gender Selected : {state.gender}</h5>
+        </div>
+    );
+}
+export default FormHandlingApp;

@@ -14,7 +14,7 @@ import TitleModifier from './TitleModifier';
 import ClassBasedLogin from './ClassBasedLogin';
 import Calculator from './Calculator';
 import ScientificCalculator from './ScientificCalculator';
-import SimpleInterest from './SimpleInterest';
+import Interest from './Interest';
 import SmartCounter from './SmartCounter';
 import ClassBasedCounter from './ClassBasedCounter';
 import ClassBasedCalculator from './ClassBasedCalculator';
@@ -32,6 +32,7 @@ import CommentNew from './CommentNew';
 import ForumNew from './ForumNew';
 import Ecommerce from './Ecommerce';
 import AppforGithub from './GithubApi/AppforGithub';
+import TodoContainer from './Todo-app/TodoContainer';
 
 export default function App() {
     return (
@@ -51,7 +52,7 @@ export default function App() {
         <ClassBasedLogin />
         <Calculator />
         <ScientificCalculator />
-        {/*<SimpleInterest/>*/}
+        <Interest/>
         <SmartCounter />
         <ClassBasedCounter />
         <ClassBasedCalculator />
@@ -70,6 +71,7 @@ export default function App() {
         <ForumNew/>
         <Ecommerce/>
         <AppforGithub/>
+        <TodoContainer/>
       
       </div>
     );
